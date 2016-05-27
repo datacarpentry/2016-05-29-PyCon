@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  Use this layout for generic pages in the workshop website.
+  Use 'workshop.html' for the workshop home page.
+
+  Remember to set the variable 'root' in the header of the actual page.
+-->
+<html>
+  <head>
+    <title>Data Carpentry: </title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://datacarpentry.org/v5/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css"  />
+<link rel="stylesheet" type="text/css" href="../css/swc.css" />
+<link rel="alternate" type="application/rss+xml" title="The Data Carpentry Blog" href="/feed.xml"/>
+<meta charset="UTF-8" />
+<meta http-equiv="last-modified" content="" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="workshop">
+    <span id="github-ribbon"><a href="http://github.com/datacarpentry/workshop-template">Find us on GitHub</a></span>
+
+    <div class="container card">
+      <div class="banner">
+  <a href="http://datacarpentry.org" title="Data Carpentry">
+    <img alt="Data Carpentry banner" src="http://datacarpentry.org/images/DC1_logo_small.png" />
+  </a>
+</div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <p>This directory contains scripts for testing your machine to make sure
+you have the software you&#39;ll need for your workshop installed.  To use
+these scripts:</p>
+
+<ol>
+  <li>
+    <p>Download <a href="swc-installation-test-1.py">swc-installation-test-1.py</a>.</p>
+  </li>
+  <li>
+    <p>Run it from the shell:</p>
+
+    <pre><code>$ python swc-installation-test-1.py
+Passed
+</code></pre>
+  </li>
+  <li>
+    <p>Download <a href="swc-installation-test-2.py">swc-installation-test-2.py</a>.</p>
+  </li>
+  <li>
+    <p>Run it from the shell:</p>
+
+    <pre><code>$ python swc-installation-test-2.py
+check virtual-shell...  pass
+...
+Successes:
+
+virtual-shell Bourne Again Shell (bash) 4.2.37
+...
+</code></pre>
+
+    <p>If you see something like:</p>
+
+    <pre><code>$ python swc-installation-test-2.py
+check virtual-shell...  fail
+...
+check for command line shell (virtual-shell) failed:
+  command line shell (virtual-shell) requires at least one of the following dependencies
+  For instructions on installing an up-to-date version, see
+  http://software-carpentry.org/setup/
+  causes:
+  check for Bourne Again Shell (bash) failed:
+    could not find 'bash' executable for Bourne Again Shell (bash)
+    For instructions on installing an up-to-date version, see
+    http://software-carpentry.org/setup/
+...
+</code></pre>
+
+    <p>follow the suggestions to try and install any missing software.  For
+additional troubleshooting information, you can use the <code>--verbose</code>
+option:</p>
+
+    <pre><code>$ python swc-installation-test-2.py --verbose
+check virtual-shell...  fail
+...
+==================
+System information
+==================
+os.name            : posix
+...
+</code></pre>
+  </li>
+</ol>
+
+        </div>
+        <div class="footer">
+  <a class="label swc-blue-bg" href="LICENSE.html">License</a>
+  <a class="label swc-blue-bg" href="http://datacarpentry.github.io/blog">Blog</a>
+  <a class="label swc-blue-bg" href="http://github.com/datacarpentry">GitHub</a>
+  <a class="label swc-blue-bg" href="http://twitter.com/datacarpentry">Twitter</a>
+  <a class="label swc-blue-bg" href="http://github.com/datacarpentry/workshop-template/issues/">Issues</a>
+</div>
+
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster. -->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../css/bootstrap/bootstrap-js/bootstrap.js"></script>
+
+  </body>
+</html>
